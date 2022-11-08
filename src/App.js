@@ -1,17 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Route } from 'react-router-dom'
 import './App.css';
 import Form from './components/Form';
 import Stories from './components/Stories';
+import getStories from './apiCalls';
 
 
 function App() {
+  const [stories, setStories] = useState([])
+
+  useEffect(() => {
+    getStories('julius caesar')
+    .then((data) =>
+      setStories(data)
+    )
+  },[stories])
+
+
   return (
+    
     <main>
       <nav>
-      <Route exact path='/' render={() => <Form />}/>
+      <Route render={() => <Form />}/>
       </nav>
-      <Route path='stories' render={() => <Stories />}/>
+      <Route render={() => <Stories stories={stories}/>}/>
     </main>
   );
 }

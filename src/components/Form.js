@@ -4,9 +4,9 @@ const Form = () => {
   return (
     <div>
       <form className='keyword-form'>
-        <input type='text' placeholder='type here' classname='input' />
+        <input type='text' placeholder='type here' className='input' />
       </form>
-        
+
     </div>
   )
 }

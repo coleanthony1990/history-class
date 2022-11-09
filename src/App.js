@@ -10,7 +10,7 @@ function App() {
   const [stories, setStories] = useState([])
 
   useEffect(() => {
-    getStories('julius caesar')
+    getStories('cleopatra')
     .then((data) =>
       setStories(data)
     )

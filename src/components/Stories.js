@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from './Card'
+import './Stories.css'
 
 const Stories = ({stories}) => {
   
@@ -13,7 +14,7 @@ const Stories = ({stories}) => {
     )
   })
   return (
-    <div>
+    <div className='stories-container'>
       {storyCard}
     </div>
   )

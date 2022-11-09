@@ -1,17 +1,18 @@
 import React from 'react'
+import './Card.css'
 
 const Card = ({event, year}) => {
 const formatYear = () => {
   if (year.includes('-')) {
-    return year.split('-').join('B.C. ')
+    return year.split('-').join('B.C.E. ')
   } else {
-    return `A.D. ${year}`
+    return `C.E. ${year}`
   }
 }
   return (
-    <div>
+    <div className='story'>
       <h2>{formatYear()}</h2>
-      <p>{event}</p>
+      <p className='event'>{event}</p>
       
     </div>
   )

@@ -9,19 +9,17 @@ import getStories from './apiCalls';
 function App() {
   const [stories, setStories] = useState([])
 
-  useEffect(() => {
-    getStories('julius caesar')
+  const applyStories = (keyword) => {
+    getStories(keyword)
     .then((data) =>
       setStories(data)
     )
-  },[stories])
-
+  }
 
   return (
-    
     <main>
-      <nav>
-      <Route render={() => <Form />}/>
+      <nav className='nav-bar'>
+      <Route render={() => <Form applyStories={applyStories}/>}/>
       </nav>
       <Route render={() => <Stories stories={stories}/>}/>
     </main>

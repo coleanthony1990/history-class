@@ -24,10 +24,28 @@
 
 }
 
-.heart {
+.add {
   position: absolute;
   bottom: 10px;
   height: 30px;
-  right: 10px;
+  right: 15px;
   cursor: pointer;
+}
+.add:active {
+  transform: scale(.8);
+}
+
+.collection-title {
+  font-size: 3vw;
+}
+
+.delete {
+    position: absolute;
+    bottom: 10px;
+    height: 30px;
+    right: 15px;
+    cursor: pointer;
+}
+.delete:active {
+  transform: scale(.8);
 }

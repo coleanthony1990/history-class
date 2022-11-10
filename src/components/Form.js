@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './Form.css'
-const Form = (props) => {
+import PropTypes from 'prop-types';
+
+
+const Form = ({applyStories}) => {
   const [search, setSearch] = useState('')
 
   const submitKeyword = event => {
     event.preventDefault()
-    props.applyStories(search)
+    applyStories(search)
     clearInput()
   }
   const clearInput = () => {
@@ -16,6 +19,7 @@ const Form = (props) => {
 
   return (
     <div className='right-container'>
+      <Link style={{textDecoration: 'none'}} to='/'>
       <form className='keyword-form'>
         <input type='text' 
           placeholder='SEARCH SOMETHING' 
@@ -23,11 +27,16 @@ const Form = (props) => {
           value={search} 
           onChange={event => setSearch(event.target.value)} 
           required/>
-        <Link to='/'><button type='submit' className='submit' onClick={submitKeyword}>GO</button></Link>
+        <button disabled={search.length<1} type='submit' className='submit' onClick={submitKeyword}>GO</button>
       </form>
+      </Link>
       <NavLink to='/collection'><button className='collection'>COLLECTION</button></NavLink>
     </div>
   )
 }
 
 export default Form
+
+Form.propTypes = {
+  applyStories: PropTypes.func.isRequired
+}

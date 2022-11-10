@@ -12,9 +12,13 @@
   font-size: 1.2rem;
   margin-bottom: 15px;
   margin-top: 5px;
+  border: 3px solid black;
+}
+input:focus {
+  outline: none;
 }
 .submit {
-  height: 2.1rem;
+  height: 2.2rem;
   background-color: black;
   color: white;
   font-family: 'Josefin Sans', sans-serif;

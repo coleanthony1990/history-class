@@ -1,9 +1,9 @@
 import React from 'react'
 import CollectionCard from './CollectionCard'
+import PropTypes from 'prop-types'
 
 
 const Collection = ({collection, removeCards}) => {
-  console.log(collection)
   const collectionCards = collection.map((story, index) => {
     return (
       <CollectionCard
@@ -25,3 +25,8 @@ const Collection = ({collection, removeCards}) => {
 }
 
 export default Collection
+
+Collection.propTypes = {
+  stories: PropTypes.array,
+  saveCards: PropTypes.func
+}

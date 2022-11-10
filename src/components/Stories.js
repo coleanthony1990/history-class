@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './Card'
 import './Stories.css'
+import PropTypes from 'prop-types';
 
 const Stories = ({stories, saveCards}) => {
   
@@ -22,3 +23,8 @@ const Stories = ({stories, saveCards}) => {
 }
 
 export default Stories
+
+Stories.propTypes = {
+  stories: PropTypes.array,
+  saveCards: PropTypes.func
+}

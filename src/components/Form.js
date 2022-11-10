@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './Form.css'
-const Form = (props) => {
+import PropTypes from 'prop-types';
+
+
+const Form = ({applyStories}) => {
   const [search, setSearch] = useState('')
 
   const submitKeyword = event => {
     event.preventDefault()
-    props.applyStories(search)
+    applyStories(search)
     clearInput()
   }
   const clearInput = () => {
@@ -33,3 +36,7 @@ const Form = (props) => {
 }
 
 export default Form
+
+Form.propTypes = {
+  applyStories: PropTypes.func.isRequired
+}

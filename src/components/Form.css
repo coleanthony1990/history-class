@@ -10,14 +10,16 @@
   border-right: none;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  margin-top: 5px;
 }
 .submit {
   height: 2.1rem;
   background-color: black;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
-
+  margin-top: 5px;
+  border: none;
 }
 
 .collection {
@@ -26,8 +28,9 @@
   color: white;
   position: absolute;
   border: none;
-  
+  cursor: pointer;
   right: 0px;
   width: 7rem;
-  height: 1.5rem;
+  height: 1.8rem;
+  font-size: .95rem;
 }

@@ -5,7 +5,6 @@ import Form from './components/Form';
 import Stories from './components/Stories';
 import getStories from './apiCalls';
 
-
 function App() {
   const [stories, setStories] = useState([])
 
@@ -19,7 +18,8 @@ function App() {
   return (
     <main>
       <nav className='nav-bar'>
-      <Route render={() => <Form applyStories={applyStories}/>}/>
+        <h1>HISTORY CLASS</h1>
+        <Route render={() => <Form applyStories={applyStories}/>}/>
       </nav>
       <Route render={() => <Stories stories={stories}/>}/>
     </main>

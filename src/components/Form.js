@@ -16,7 +16,7 @@ const Form = (props) => {
 
   return (
     <div className='right-container'>
-      <Link to='/'>
+      <Link style={{textDecoration: 'none'}} to='/'>
       <form className='keyword-form'>
         <input type='text' 
           placeholder='SEARCH SOMETHING' 
@@ -24,7 +24,7 @@ const Form = (props) => {
           value={search} 
           onChange={event => setSearch(event.target.value)} 
           required/>
-        <button type='submit' className='submit' onClick={submitKeyword}>GO</button>
+        <button disabled={search.length<1} type='submit' className='submit' onClick={submitKeyword}>GO</button>
       </form>
       </Link>
       <NavLink to='/collection'><button className='collection'>COLLECTION</button></NavLink>

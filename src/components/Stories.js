@@ -2,14 +2,15 @@ import React from 'react'
 import Card from './Card'
 import './Stories.css'
 
-const Stories = ({stories}) => {
+const Stories = ({stories, saveCards}) => {
   
   const storyCard = stories.map((story, index) => {
     return (
       <Card
-        event={story.event}
+        historicalEvent={story.event}
         year={story.year}
         key={index}
+        saveCards={saveCards}
       />
     )
   })

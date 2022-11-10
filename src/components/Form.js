@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import './Form.css'
 const Form = (props) => {
   const [search, setSearch] = useState('')
@@ -16,10 +17,15 @@ const Form = (props) => {
   return (
     <div className='right-container'>
       <form className='keyword-form'>
-        <input type='text' placeholder='SEARCH SOMETHING!!' className='input' value={search} onChange={event => setSearch(event.target.value)} required/>
-        <button type='submit' className='submit' onClick={submitKeyword}>GO</button>
+        <input type='text' 
+          placeholder='SEARCH SOMETHING' 
+          className='input' 
+          value={search} 
+          onChange={event => setSearch(event.target.value)} 
+          required/>
+        <Link to='/'><button type='submit' className='submit' onClick={submitKeyword}>GO</button></Link>
       </form>
-      <button className='collection'>COLLECTION</button>
+      <NavLink to='/collection'><button className='collection'>COLLECTION</button></NavLink>
     </div>
   )
 }

@@ -19,9 +19,7 @@ function App() {
   }
 
   const saveCards = (card) => {
-    if (!collection.includes(card)) {
-    setCollection([...collection, card])
-    }
+     setCollection([...collection, card])
   }
 
   const removeCards = (selectedCard) => {
@@ -31,6 +29,7 @@ function App() {
       }
     })
     setCollection(newCollection)
+    
   }
   
   return (

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -8,15 +7,15 @@
   flex-wrap: wrap;
 }
 h1 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'El Messiri', sans-serif;
   position: relative;
   font-size: 3.9rem;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 7px;
 }
 
 h2 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'El Messiri', sans-serif;
   text-align: center;
   margin: 6%;
   

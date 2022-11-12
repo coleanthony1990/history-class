@@ -13,7 +13,6 @@
   margin-bottom: 50px;
   margin-top: 5px;
   border: 3px solid black;
-  position: relative;
 }
 input:focus {
   outline: none;
@@ -24,9 +23,8 @@ input:focus {
   color: white;
   font-family: 'El Messiri', sans-serif;
   margin-top: 5px;
-  border: none;
-  position: absolute;
-  right: 0px;
+  border: none;  
+  cursor: pointer;
 }
 
 .collection {

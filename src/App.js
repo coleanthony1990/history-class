@@ -5,23 +5,24 @@ import Form from './components/Form';
 import Stories from './components/Stories';
 import getStories from './apiCalls';
 import Collection from './components/Collection';
+import Intro from './components/Intro';
 
 
 function App() {
   const [stories, setStories] = useState([])
   const [collection, setCollection] = useState([])
+  const [error, setError] = useState('')
 
   const applyStories = (keyword) => {
     getStories(keyword)
     .then((data) =>
       setStories(data)
     )
+    .catch((error) => setError(error.message))
   }
 
   const saveCards = (card) => {
-    if (!collection.includes(card)) {
-    setCollection([...collection, card])
-    }
+     setCollection([...collection, card])
   }
 
   const removeCards = (selectedCard) => {
@@ -31,7 +32,9 @@ function App() {
       }
     })
     setCollection(newCollection)
+    
   }
+  
   
   return (
     <main>
@@ -41,9 +44,10 @@ function App() {
         
         <Form applyStories={applyStories} />
       </nav>
-      {stories.length === 0 && <h2>Welcome to History Class! Feel free to type into the search bar to get super brief history lessons on anything! Feel free to save these lessons in your collection for referencing later.</h2>}
+      
       <Switch>
-      <Route exact path= '/' render={() => <Stories stories={stories} saveCards={saveCards}/>}/>
+      <Route exact path= '/' render={() => <Intro/>}/>
+      <Route path= '/stories' render={() => <Stories stories={stories} saveCards={saveCards} error={error} />}/>
       <Route path='/collection' render={() => <Collection collection={collection} removeCards={removeCards}/>}/>
       </Switch>
     </main>

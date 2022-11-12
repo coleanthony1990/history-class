@@ -18,7 +18,7 @@ const Collection = ({collection, removeCards}) => {
     <div>
       <h2 className='collection-title'>Collection</h2>
       <div  className='stories-container'>
-      {collection.length === 0 && <h2>You have no histroy cards in here. Click the "+" to add some.</h2>}
+      {collection.length === 0 && <h2>You have no history cards in here. Click the "+" to add some.</h2>}
       {collectionCards}
       </div>
     </div>

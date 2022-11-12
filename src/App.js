@@ -22,7 +22,7 @@ function App() {
   }
 
   const saveCards = (card) => {
-        setCollection([...collection, card])
+    setCollection([...collection, card])
   }
 
   const removeCards = (selectedCard) => {

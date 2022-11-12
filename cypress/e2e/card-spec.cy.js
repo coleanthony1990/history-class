@@ -19,4 +19,19 @@ describe('card', () => {
       .get('.collection-title').contains('Collection')
       .get(':nth-child(1) > .historical-event').contains('Charles IV of Bohemia is crowned with the Iron Crown of Lombardy as King of Italy in Milan.')
   })
+  it('should give you a message if the keyword yeilds no result', () => {
+    cy.get('.input').type('potato')
+      .get('button').contains('GO').click()
+      .get('h2').contains('We have no data for this keyword. Try another keyword')
+  })
+  it('should give you a message if an error occurs with the fetch', () => {
+    cy.get('.input').type('italy')
+      .get('.submit').click()
+    cy.intercept('GET', 'https://api.api-ninjas.com/v1/historicalevents?text=italy', {
+      forceNetworkError: true,
+    })
+    cy.on('window:alert',(t)=>{
+      expect(t).to.contains('Failed to fetch');
+    })
+  })
 })

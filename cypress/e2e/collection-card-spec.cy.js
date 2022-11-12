@@ -12,4 +12,8 @@ describe('collection', () => {
     .get('.year').contains('C.E. 1355')
     .get(':nth-child(1) > .delete > svg').click()
   })
+  it('should give the user a message if there are no cards in the collection', () => {
+    cy.get('.collection').click()
+    cy.get('h2').contains('You have no histroy cards in here. Click the "+" to add some.')
+  })
 })

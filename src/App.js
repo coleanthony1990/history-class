@@ -34,16 +34,12 @@ function App() {
     setCollection(newCollection)
   }
   
-  
   return (
     <main>
-      
       <nav className='nav-bar'>
         <h1>HISTORY CLASS</h1>
-        
         <Form applyStories={applyStories} />
       </nav>
-      
       <Switch>
       <Route exact path= '/' render={() => <Intro/>}/>
       <Route path= '/stories' render={() => <Stories stories={stories} saveCards={saveCards} error={error} />}/>

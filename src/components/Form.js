@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, NavLink, useHistory } from 'react-router-dom'
+import { NavLink, useHistory } from 'react-router-dom'
 import './Form.css'
 import PropTypes from 'prop-types';
 
@@ -16,9 +16,14 @@ const Form = ({applyStories}) => {
   const clearInput = () => {
     setSearch('')
   }
-  const handleNavigate = event => {
+  const handleNavigate = () => {
     history.push('/stories')
   }
+  const handleChange = event => {
+    const result = event.target.value.replace(/[^a-z, ' ']/gi, '');
+
+    setSearch(result);
+  };
 
 
   return (
@@ -28,7 +33,7 @@ const Form = ({applyStories}) => {
           placeholder='SEARCH SOMETHING' 
           className='input' 
           value={search} 
-          onChange={event => setSearch(event.target.value)} 
+          onChange={handleChange} 
           required/>
         <button disabled={search.length<1} type='submit' className='submit' onClick={handleNavigate}>GO</button>
       </form>

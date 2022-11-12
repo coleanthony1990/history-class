@@ -16,9 +16,9 @@ const addToCollection = event => {
 
 const formatYear = () => {
   if (year.includes('-')) {
-    return year.split('-').join('B.C.E. ')
+    return `${year.replace('-', '')} B.C.E.`
   } else {
-    return `C.E. ${year}`
+    return `${year} C.E.`
   }
 }
   return (

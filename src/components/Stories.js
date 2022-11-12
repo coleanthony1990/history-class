@@ -4,9 +4,8 @@ import './Stories.css'
 import PropTypes from 'prop-types';
 
 const Stories = ({stories, saveCards, error}) => {
-
-  
-  const storyCard = stories.map((story, index) => {
+  const sortedStories = stories.sort((a, b) => a.year - b.year)
+  const storyCard = sortedStories.map((story, index) => {
     return (
       <Card
         historicalEvent={story.event}
@@ -32,5 +31,6 @@ export default Stories
 
 Stories.propTypes = {
   stories: PropTypes.array,
-  saveCards: PropTypes.func
+  saveCards: PropTypes.func,
+  error: PropTypes.string
 }

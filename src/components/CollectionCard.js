@@ -16,9 +16,9 @@ const CollectionCard = ({historicalEvent, year, removeCards}) => {
 
   const formatYear = () => {
     if (year.includes('-')) {
-      return year.split('-').join('B.C.E. ')
+      return `${year.replace('-', '')} B.C.E.`
     } else {
-      return `C.E. ${year}`
+      return `${year} C.E.`
     }
   }
 
@@ -38,5 +38,5 @@ export default CollectionCard
 CollectionCard.propTypes = {
   historicalEvent: PropTypes.string,
   year: PropTypes.string,
-  saveCards: PropTypes.func
+  removeCards: PropTypes.func
 }

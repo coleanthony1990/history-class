@@ -29,5 +29,5 @@ export default Collection
 
 Collection.propTypes = {
   stories: PropTypes.array,
-  saveCards: PropTypes.func
+  removeCards: PropTypes.func
 }

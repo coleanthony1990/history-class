@@ -32,5 +32,6 @@ export default Stories
 
 Stories.propTypes = {
   stories: PropTypes.array,
-  saveCards: PropTypes.func
+  saveCards: PropTypes.func,
+  error: PropTypes.string
 }

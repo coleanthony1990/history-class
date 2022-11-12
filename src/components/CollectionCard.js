@@ -38,5 +38,5 @@ export default CollectionCard
 CollectionCard.propTypes = {
   historicalEvent: PropTypes.string,
   year: PropTypes.string,
-  saveCards: PropTypes.func
+  removeCards: PropTypes.func
 }

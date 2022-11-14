@@ -6,7 +6,6 @@
 - [About The Project](#about-the-project)
 - [Project Spec](#project-spec)
 - [Technologies](#technologies)
-- [Getting Started](#getting-started)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Accessibility](#accessibility)
@@ -47,11 +46,8 @@ History Class is an application built in week 18 of the [Turing School of Softwa
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
-# Getting Started
-You can find the project [here](https://github.com/coleanthony1990/history-class.git) and follow the instructions below to get started.
   
-
-### Installation
+## Installation
 1. Clone the repo
    ```sh
    git clone git@github.com/coleanthony1990/history-class.git

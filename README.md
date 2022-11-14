@@ -64,7 +64,8 @@ History Class is an application built in week 18 of the [Turing School of Softwa
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-[screen-recorder-sun-nov-13-2022-15-42-34.webm](https://user-images.githubusercontent.com/103971359/201548407-e329d8cf-6168-409a-848f-02fd92842143.webm)
+[screen-recorder-sun-nov-13-2022-23-23-37.webm](https://user-images.githubusercontent.com/103971359/201589729-af9b9551-20f9-4398-9a3e-e488343d24d0.webm)
+
 
 New feature ideas: 
 - [ ] Utilize local storage to save user's collection.

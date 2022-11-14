@@ -11,6 +11,7 @@ const Stories = ({stories, saveCards, error}) => {
         historicalEvent={story.event}
         year={story.year}
         key={index}
+        id={index}
         saveCards={saveCards}
       />
     )

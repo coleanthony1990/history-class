@@ -22,7 +22,19 @@ function App() {
   }
 
   const saveCards = (card) => {
-    setCollection([...collection, card])
+    let newCollection = collection
+    let addArray = true;
+    newCollection.map((oldCard) => {
+      if (oldCard.historicalEvent === card.historicalEvent) {
+        newCollection.splice(oldCard, 1)
+        addArray = false;
+        alert('This card was already in your collection, but you just removed it, click it once more to add it.')
+      }
+    })
+    if (addArray) {
+      newCollection.push(card)
+    }
+    setCollection(newCollection)
   }
 
   const removeCards = (selectedCard) => {

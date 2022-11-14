@@ -26,9 +26,8 @@ function App() {
     let addArray = true;
     newCollection.map((oldCard) => {
       if (oldCard.historicalEvent === card.historicalEvent) {
-        newCollection.splice(oldCard, 1)
         addArray = false;
-        alert('This card was already in your collection, but you just removed it, click it once more to add it.')
+        alert('This history card is already in your collection')
       }
     })
     if (addArray) {

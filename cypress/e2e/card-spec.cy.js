@@ -32,7 +32,7 @@ describe('card', () => {
       .get(':nth-child(1) > .add > svg').click()
       .get(':nth-child(1) > .add > svg').click()
     cy.on('window:alert', (t)=>{
-      expect(t).to.contains('This card was already in your collection, but you just removed it, click it once more to add it.')
+      expect(t).to.contains('This history card is already in your collection')
     })
   })
   it('should give you a message if an error occurs with the fetch', () => {

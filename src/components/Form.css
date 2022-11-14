@@ -2,6 +2,7 @@
 .keyword-form {
   display: flex;
   justify-content: center;
+  margin-right: 20px;
 }
 
 .input {

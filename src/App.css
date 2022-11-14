@@ -19,5 +19,8 @@ h2 {
   font-family: 'El Messiri', sans-serif;
   text-align: center;
   margin: 6%;
-  
+}
+
+.intro {
+  margin-top: 50px;
 }

@@ -3,13 +3,14 @@ import './Card.css'
 import {AiOutlinePlus} from 'react-icons/ai'
 import PropTypes from 'prop-types';
 
-const Card = ({historicalEvent, year, saveCards}) => {
+const Card = ({historicalEvent, year, id,  saveCards}) => {
 
 const addToCollection = event => {
   event.preventDefault()
   const collectedCard = {
     year: year,
-    historicalEvent: historicalEvent
+    historicalEvent: historicalEvent,
+    id: id
   }
   saveCards(collectedCard)
 }

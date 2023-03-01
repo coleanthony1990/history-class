@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# [History Class](https://history-class-showcase.vercel.app/)
 
-## Available Scripts
+## Table of Contents
+- [About The Project](#about-the-project)
+- [Project Spec](#project-spec)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Accessibility](#accessibility)
+- [Testing](#testing)
+- [Contact](#contact)
+- [Acknowledgments](#acknowledgments)
+- [Reflections](#reflections)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## About The Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+History Class is an application giving the user the ability to learn short history snippets about a subject of the user's choosing. Users can save the snippets in a collection for referencing later.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### `npm test`
+## Project Spec
+History Class is an application built in week 18 of the [Turing School of Software and Design](https://turing.edu/) front-end engineering program. The goals of this [project](https://frontend.turing.edu/projects/module-3/showcase.html) were to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Create a robust testing suite using Cypress
+* Generate and display user data through data manipulation using React
+* Make network requests to API endpoints to retrieve and manipulate data
+* Implement error handling 
+* Implement third party packages
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Mocha](https://img.shields.io/badge/-mocha-%238D6748?style=for-the-badge&logo=mocha&logoColor=white)
+![cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### `npm run eject`
+<!-- GETTING STARTED -->
+  
+## Installation
+1. Clone the repo
+   ```sh
+   git clone git@github.com/coleanthony1990/history-class.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   npm start
+   ``` 
+5. Enter the following url in your browser: http://localhost:3000/
+6. Explore the website and code base.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- USAGE EXAMPLES -->
+## Usage
+[screen-recorder-sun-nov-13-2022-23-23-37.webm](https://user-images.githubusercontent.com/103971359/201589729-af9b9551-20f9-4398-9a3e-e488343d24d0.webm)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+New feature ideas: 
+- [ ] Utilize local storage to save user's collection.
+- [ ] produced featured cards that change every time a user visits the page
+- [ ] Users will be able create history cards of their own.
 
-## Learn More
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Accessibility
+This application has a score of 100% with Lighthouse.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Code Splitting
+## Testing
+I utilized integration testing to create our project using [cypress](https://www.cypress.io/), [Mocha](https://mochajs.org/) & [Chai](https://www.chaijs.com/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Analyzing the Bundle Size
+<!-- CONTACT -->
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Cole Anthony - [LinkedIn](https://www.linkedin.com/in/cole-edwin-anthony/) - cole.edwin.anthony@gmail.com
 
-### Making a Progressive Web App
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+The following resources helped us build this project:
 
-### Advanced Configuration
+[![MDN Docs][MDN-shield]][MDN]
+[![Turing School](https://img.shields.io/badge/Turing_School-030303?style=for-the-badge)](https://turing.edu/)
+[![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](https://v5.reactrouter.com/web/api/Hooks)
+[![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white)](https://stackoverflow.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Deployment
+## Reflections
+I really like the idea of useful apps that can be used quickly in the moment. Like someone who might use [IMDB](https://www.imdb.com/) on their phone, this app would give the user quick necessary information. I feel as though I completed that task. The challenges I faced were mostly around getting familiar with the technologies. For instance, I found that I was not able to us a <Link> from React Router on a single element in a form but I had to use it on the whole form. Therefor I learned how to use the "useHistory" hook instead.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[MDN-shield]: https://img.shields.io/badge/MDN_Web_Docs-black?style=for-the-badge&logo=mdnwebdocs&logoColor=white
+[MDN]:https://developer.mozilla.org/en-US/

@@ -19,9 +19,11 @@ const Stories = ({stories, saveCards, error}) => {
     alert(error)
   }
 
+  
+
   return (
     <div className='stories-container'>
-      {(stories.length === 0 && error.length === 0) && <h2>We have no data for this keyword. Try another keyword</h2>}
+      {(stories.length === 0 && error.length === 0) && <h2>Loading...</h2>}
       {storyCard}
     </div>
   )
